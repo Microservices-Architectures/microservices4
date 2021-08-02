@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  video-straming:
+    image: video-straming
+    build:
+      context: ./video-straming
+      dockerfile: Dockerfile
+    container_name: video-straming
+    ports:
+      - "4000:80"
+      environment:
+        -PORT=80
+      restart: "no"

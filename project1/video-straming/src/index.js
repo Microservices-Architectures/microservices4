@@ -21,7 +21,7 @@ const PORT = process.env.PORT;
 //
 app.get("/video", (req, res) => {
 
-    const videoPath = path.join("./videos", "SampleVideo_1280x720_1mb.mp4");
+    const videoPath = path.join("./videos", " talent.mp4");
     fs.stat(videoPath, (err, stats) => {
         if (err) {
             console.error("An error occurred ");

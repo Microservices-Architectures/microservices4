@@ -3,12 +3,12 @@ services:
 
   video-straming:
     image: video-straming
-    build:
+    build: 
       context: ./video-straming
       dockerfile: Dockerfile
     container_name: video-straming
     ports:
-      - "4000:80"
-      environment:
-        -PORT=80
-      restart: "no"
+     - "4000:80"
+    environment:
+      - PORT=80
+    restart: "no"

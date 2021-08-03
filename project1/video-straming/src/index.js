@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const dotenv = require("dotenv").config()
 
 const app = express();
 
@@ -14,7 +15,7 @@ if (!process.env.PORT) {
 //
 // Extracts the PORT environment variable.
 //
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 //
 // Registers a HTTP GET route for video streaming.
